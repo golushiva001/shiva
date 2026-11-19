@@ -1,0 +1,364 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rama Technical Degree College</title>
+    <link rel="stylesheet" href="se.css">
+    <style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* TOP HEADER */
+
+.top-header {
+    width: 100%;
+    height: 52px;
+    background: #1c247d;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 8%;
+    color: white;
+    font-size: 13px;
+}
+
+.contact {
+    display: flex;
+    gap: 18px;
+    white-space: nowrap;
+}
+
+.top-links {
+    display: flex;
+    gap: 18px;
+}
+
+.top-links a {
+    color: white;
+    text-decoration: none;
+}
+
+.top-links a:not(:last-child)::after {
+    content: " |";
+    margin-left: 15px;
+}
+
+.social {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.social a {
+    color: #00aaff;
+    font-size: 17px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.social button {
+    background: #ff9800;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+
+/* MAIN HEADER */
+
+.main-header {
+    width: 100%;
+    height: 315px;
+    background: #f1f7ff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 20px 3.4%;
+}
+
+/* LOGO */
+
+.logo {
+    width: 18%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 240px;
+}
+
+.logo img {
+    width: 160px;
+    height: 160px;
+    object-fit: contain;
+}
+
+/* COLLEGE DETAILS */
+
+.college-info {
+    width: 65%;
+    text-align: center;
+    padding-top: 0px;
+}
+
+.college-info h2 {
+    color: red;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.college-info h1 {
+    color: #b00000;
+    font-size: 28px;
+    margin-bottom: 12px;
+}
+
+.college-info p {
+    font-size: 13px;
+    margin-bottom: 20px;
+}
+
+.college-info .registered {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.college-info h3 {
+    color: green;
+    font-size: 14px;
+    margin-bottom: 23px;
+}
+
+.college-info .iso {
+    color: red;
+    font-size: 12px;
+}
+
+/* VERIFICATION BUTTONS */
+
+.verification {
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    padding-top: 42px;
+}
+
+.verification button {
+    width: 100%;
+    height: 43px;
+    background: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.verification button:hover {
+    background: #e58c00;
+}
+
+
+/* NAVIGATION BAR */
+
+.navbar {
+    width: 100%;
+    height: 51px;
+    background: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.navbar a:hover {
+    color: yellow;
+}
+
+
+/* RESPONSIVE DESIGN */
+
+@media (max-width: 900px) {
+
+    .top-header {
+        height: auto;
+        padding: 12px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .contact,
+    .top-links,
+    .social {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .main-header {
+        height: auto;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+        padding: 20px;
+    }
+
+    .logo {
+        width: 100%;
+        height: auto;
+        justify-content: center;
+    }
+
+    .college-info {
+        width: 100%;
+    }
+
+    .college-info h1 {
+        font-size: 22px;
+    }
+
+    .verification {
+        width: 100%;
+        padding-top: 0;
+    }
+
+    .navbar {
+        height: auto;
+        padding: 15px;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+}
+
+@media (max-width: 500px) {
+
+    .contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .college-info h1 {
+        font-size: 19px;
+    }
+
+    .college-info h2 {
+        font-size: 21px;
+    }
+
+    .navbar a {
+        font-size: 13px;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+<!-- TOP HEADER -->
+<header class="top-header">
+
+    <div class="contact">
+        <span>📞 +91 9118825965, +91 9026495898</span>
+        <span>✉ ramg012023@gmail.com</span>
+    </div>
+
+    <div class="top-links">
+        <a href="#">ERP</a>
+        <a href="#">Gallery</a>
+        <a href="#">Alumni</a>
+        <a href="#">Faculty Portal</a>
+    </div>
+
+    <div class="social">
+        <a href="#">f</a>
+        <a href="#">♥</a>
+        <a href="#">◎</a>
+        <a href="#">▶</a>
+        <button>Online Admission</button>
+    </div>
+
+</header>
+
+
+<!-- MAIN INSTITUTE HEADER -->
+<section class="main-header">
+
+    <!-- LOGO -->
+    <div class="logo">
+        <img src="img/RTDC_LOGO.png" alt="College Logo">
+    </div>
+
+    <!-- COLLEGE DETAILS -->
+    <div class="college-info">
+
+        <h2>शानदार 26 साल (कुछ तो है !)</h2>
+
+        <h1>RAMA TECHNICAL DEGREE COLLEGE</h1>
+
+        <p>
+            Indian Government copyright No - A-65018/03 U.P Govt.
+            Registration No – 54/2000
+        </p>
+
+        <p class="registered">
+            Registered Organization UNDER UP Society Act 21-1860
+        </p>
+
+        <h3>Established in Year 2000</h3>
+
+        <p class="iso">
+            (AN ISO 9001:2015 CERTIFIED ORGANIZATION)
+        </p>
+
+    </div>
+
+    <!-- VERIFICATION BUTTONS -->
+    <div class="verification">
+
+        <button>Certificate Verification</button>
+
+        <button>Registration Verification</button>
+
+    </div>
+
+</section>
+<div>
+    <marquee behavior="" direction="left">Welcome to RAMA TECHNICAL DEGREE COLLEGE</marquee>
+</div>
+
+<!-- NAVIGATION BAR -->
+<nav class="navbar">
+
+    <a href="#">Home</a>
+    <a href="#">Course</a>
+    <a href="#">About Us</a>
+    <a href="#">Important Web Links</a>
+    <a href="#">RTDC Login</a>
+    <a href="#">Student Zone</a>
+    <a href="#">Gallery</a>
+    <a href="#">Contact Us</a>
+
+</nav>
+
+</body>
+</html>
